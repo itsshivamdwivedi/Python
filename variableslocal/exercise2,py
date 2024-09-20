@@ -1,0 +1,44 @@
+import mysql.connector
+
+# Configure MySQL connection
+config = {
+    'user': 'your_username',
+    'password': 'your_password',
+    'host': 'your_host',
+    'database': 'your_database',
+    'raise_on_warnings': True
+}
+
+# Connect to MySQL
+try:
+    connection = mysql.connector.connect(**config)
+    print("Connected to MySQL successfully!")
+
+    # Create a cursor object to execute SQL queries
+    cursor = connection.cursor()
+
+    # Insert data into MySQL table
+    insert_query = "INSERT INTO your_table (column1, column2) VALUES (%s, %s)"
+    data = [('Value 1', 10), ('Value 2', 20)]  # Example data to insert
+    cursor.executemany(insert_query, data)
+    connection.commit()
+    print("Data inserted successfully!")
+
+    # Fetch and display data from MySQL table
+    select_query = "SELECT * FROM your_table"
+    cursor.execute(select_query)
+    records = cursor.fetchall()
+
+    print("Fetched data:")
+    for record in records:
+        print(record)
+
+except mysql.connector.Error as error:
+    print("Error connecting to MySQL:", error)
+
+finally:
+    # Close the connection and cursor
+    if connection.is_connected():
+        cursor.close()
+        connection.close()
+        print("MySQL connection closed.")
