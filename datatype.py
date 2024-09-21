@@ -14,7 +14,12 @@ print(d["name"])
 # s=()
 # the another property of the set is that it takes repeated element at once
 # print(s(type(s)))
-s1=()
+s1=set([2,3,2,4,5])
 print(s1,type(s1))
 s ={10,20,30,10}
 print(s,type(s))
+
+a ={2,3,"shivam"}
+
+# An empty dictionary is a set 
+print(a,type(a)) 
