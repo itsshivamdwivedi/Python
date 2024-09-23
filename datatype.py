@@ -19,7 +19,27 @@ print(s1,type(s1))
 s ={10,20,30,10}
 print(s,type(s))
 
+<<<<<<< HEAD
 a ={2,3,"shivam"}
 
 # An empty dictionary is a set 
 print(a,type(a)) 
+=======
+
+
+# reverse a string using for loop and functions
+# def reverse_string(s):
+#     return s[::-1]
+# print(reverse_string("hello Shivam "))
+
+#  Method Number 2 for reversing a string
+def reverse_string(str):
+    reversed_string =""
+    for i in range(len(str)):
+        reversed_string = str[i] + reversed_string
+
+    return reversed_string
+
+str="Hii I am Shivam"
+print("The reversed String is ",(reverse_string(str)))
+>>>>>>> 8fe3dc5 (commit)
