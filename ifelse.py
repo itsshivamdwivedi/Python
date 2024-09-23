@@ -6,6 +6,7 @@
 # else:
 #     print("Username contains 10 or more characters.")
 # write a python program to find the greatest of four numbers using if else
+
 # num1 = float(input("Enter the first number: "))
 # num2 = float(input("Enter the second number: "))
 # num3 = float(input("Enter the third number: "))
@@ -23,6 +24,9 @@
 #     greatest = num4
 
 # print("The greatest number is:", greatest)
+
+
+
 # efficient way to this same problem is showm below 
 # num1 = float(input("Enter the first number: "))
 # num2 = float(input("Enter the second number: "))
@@ -30,17 +34,23 @@
 # num4 = float(input("Enter the fourth number: "))
 # greatest = max(num1,num2,num3,num4)
 # print("The greatest number is:", greatest)
+
+
+
 # write a python program to find whether th given user  name is presnt in the list or not 
-# def name_is_present(name,name_list):
-#     if name in name_list:
-#         retun True
-#     else:
-#         return False
-#     names = ['shivam','vishal','harsh']
-#     search_name = input("Enter the name:")
-#     if name_is_present(name,name_list):
-#         print(f"{search_name} is present in the list")
-#     else:
-#         print(f"{search_name}is not present in the list")
+def name_is_present(name,name_list):
+    if name in name_list:
+        return True
+    
+    else:
+        return False
+    
+names = ['shivam','vishal','harsh']
+search_name = input("Enter the name:")
+
+if name_is_present(search_name,names):
+    print(f"{search_name}   is present in the list")
+else:
+    print(f"{search_name}is not present in the list")
 
 
