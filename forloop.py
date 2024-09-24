@@ -22,7 +22,11 @@ adj= ["red","big","tasty"]
 for x,y in zip(adj,fruits):
     print(x,y)
 
-
+# print the table from 1 to 5 using for loop
+for i in range(1,21):
+    print("TABLE OF",i)
+    for j in range(1,11):
+        print(i,"x",j,"=",i*j)
 
 # how to print the table from 1 to 10 using the for loop 
 # for i in range (1,11):
