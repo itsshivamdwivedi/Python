@@ -38,19 +38,69 @@
 
 
 # write a python program to find whether th given user  name is presnt in the list or not 
-def name_is_present(name,name_list):
-    if name in name_list:
-        return True
+# def name_is_present(name,name_list):
+#     if name in name_list:
+#         return True
     
+#     else:
+#         return False
+    
+# names = ['shivam','vishal','harsh']
+# search_name = input("Enter the name:")
+
+#  if else practice examples  
+# write a program to check whether the year is an leap year or not
+
+# year = int(input("Enter your year"))
+# if year %100 == 0:
+#     if year %400 == 0:
+#         print(f"{year} is a leap year")
+#     else:
+#         print(f"{year} is not a leap year")
+# else:
+#     if year %4 == 0:
+#         print(f"{year} is a leap year")
+#     else:
+#         print(f"{year} is not a leap year")
+
+# Write a program to accept the city name and display their monument
+
+# city=input("Enter a city name")
+
+# if city == "Mumbai":
+#     print("The Monument in Mumbai is the Gateway of India")
+# elif city == "Delhi":
+#     print("The Monument in Delhi is the Taj Mahal")
+# elif city == "Kolkata":
+#     print("The Monument in Kolkata is the Shiv Sena Museum")
+# else:
+#     print("The given city is not acceptable")
+       
+# write a python program to take in the marks of 3 subjects and display in the grade
+
+def calculate_grade(average):
+    if average >= 90:
+        return "A"
+    elif average >= 80:
+        return "B"
+    elif average >= 70:
+        return "C"
+    elif average >= 60:
+        return "D"
     else:
-        return False
+        return "You are Failed"
     
-names = ['shivam','vishal','harsh']
-search_name = input("Enter the name:")
-
-if name_is_present(search_name,names):
-    print(f"{search_name}   is present in the list")
-else:
-    print(f"{search_name}is not present in the list")
+marks =[]
+for i in range(1,5):
+    mark=int(input(f"Enter the marks of the subjects {i}:"))
+    marks.append(mark)
 
 
+# logic to calculate the average
+average = sum(marks)/len(marks)
+print(f"The average marks are: {average:.2f}")
+print(f"Grade: {calculate_grade(average)}")
+
+
+    
+    
