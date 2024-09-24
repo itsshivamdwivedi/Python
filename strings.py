@@ -1,11 +1,12 @@
 w = "my name is shivam"
-print(w)
+# print(w)
 # print(w[0::2])
-print(w[-1:-6:-2])
-# string iteration method
-t=len(w)
-print(len(w))
-print(f"The lenth of the string is {t}")
+# print(w[-1:-6:-2])
+# print(w[::-1])
+# # string iteration method
+# t=len(w)
+# print(len(w))
+# print(f"The lenth of the string is {t}")
 
 # this is the string iteration method
 # for a in range(t):
