@@ -35,13 +35,31 @@ for i in range(1,rows + 1,1):
 
 # Write a program to get the multiplication table of number given by the user
 
-n=int(input("Enter a number of which you want multiplication table of"))
+# n=int(input("Enter a number of which you want multiplication table of"))
 
-for i in range(1,11,1):
-    product=n*i
-    print(f"{n} x {i} = {product}")
+# for i in range(1,11,1):
+#     product=n*i
+#     print(f"{n} x {i} = {product}")
 
+# write a program to display the numbers fron the lists using loop 
 
+# numbers=[12,75,150,145,525,50]
+# for number in numbers:
+#     if number >500:
+#         break
+#     elif number>150:
+#         continue
+#     elif number %5==0:
+#         print(number)
 
+# Write a program to count the total number of digits in a number
+
+number=int(input("Enter a number"))
+count=0
+while number!=0:
+    number=number//10
+    count=count+1
+
+print("The total digits are",count)
 
 
