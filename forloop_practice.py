@@ -1,10 +1,10 @@
 #  write a program in python that takes a list of strings and creates a new string that contains the lengths of each string
 
-words=["hello","Shivam","How","redmi"]
-lengths=[]
-for word in words:
-    lengths.append(len(word))
-print(lengths)
+# words=["hello","Shivam","How","redmi"]
+# lengths=[]
+# for word in words:
+#     lengths.append(len(word))
+# print(lengths)
 
 
 #  Write a program to print the following pattern
@@ -15,13 +15,13 @@ print(lengths)
 # 1 2 3 4 5 
 
 #  let's define the number of rows
-rows=5
-for i in range(1,rows + 1,1):
+# rows=5
+# for i in range(1,rows + 1,1):
 
-    for j in range(1,i+1):          #inner loop 
-        print(j, end=" ")
+#     for j in range(1,i+1):          #inner loop 
+#         print(j, end=" ")
 
-    print(" ")
+#     print(" ")
 
 
 # WAP In python to calculate the sum of all numbers from 1 to a given number entered by the users
@@ -54,12 +54,50 @@ for i in range(1,rows + 1,1):
 
 # Write a program to count the total number of digits in a number
 
-number=int(input("Enter a number"))
-count=0
-while number!=0:
-    number=number//10
-    count=count+1
+# number=int(input("Enter a number"))
+# count=0
+# while number!=0:
+#     number=number//10
+#     count=count+1
 
-print("The total digits are",count)
+# print("The total digits are",count)
 
 
+
+# Print the reverse of the numbers using for loop 
+
+# for num in range(10,0,-1):
+#     print(num)
+# Print the 1st 10 natural numbbers using for loop 
+# for num in range(1,11):
+#     print(num)
+
+
+# Write a program to print the pyramid of the pattern
+
+# rows=int(input("Enter the number of rows"))
+
+# for i in range(1,rows+1,1):
+#     for j in range(1,i+1):
+#         print("*",end="")
+#     print("")
+
+# Enter the number of rows6
+# *
+# **
+# ***
+# ****
+# *****
+# ******
+
+# Simple Number pattern using for loop 
+
+# rows=int(input("Enter the number of rows"))
+# for i in range(1,rows+1):             #outer loop handle the number of rows
+#     for j in range(1,i+1):                #inner loop handle the number of columns
+#         print(i,end="")
+
+#     print(" ")
+
+
+# alphabet pyramid using for loop
