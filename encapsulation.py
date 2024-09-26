@@ -4,7 +4,7 @@ class Student:
                   self.__name =""
           def getname(self):
                   return self._name
-           def setname(self,name):
+          def setname(self,name):
                 self._name=name
 
 obj=Student()
