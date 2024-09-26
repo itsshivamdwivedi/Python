@@ -5,4 +5,4 @@ for index,fruit in enumerate(fruits):
     print(f"The {index} fruit is {fruit}")
 
 # By using this i understand 
-# Instead of defining variable of index we can get the index of the each element at the same time using Enumerate
+# Instead of defining variable of index we can get the index of the each element at the same time using Enumerate 
