@@ -101,3 +101,54 @@
 
 
 # alphabet pyramid using for loop
+
+# rows=int(input("Enter the number of rows"))
+# ascii_value=65
+
+# for i in range(rows):
+#     for j in range(i+1):
+#         alphabet=chr(ascii_value)
+#         print(alphabet,end="")
+
+#     ascii_value+=1
+#     print()
+
+# # Output :-
+# Enter the number of rows5
+# A
+# BB
+# CCC
+# DDDD
+# EEEEE
+
+
+# Reverse pattern pyramid using python
+# rows=int(input("Enter the number of rows        "))
+# for i in range(rows+1,0,-1):
+#     for j in range(0,i-1):
+#         print("*",end="")
+
+#     print()
+
+# Enter the number of rows        5
+# *****
+# ****
+# ***
+# **
+# *
+      
+
+# REVERSE NUMBER PYRAMID USING F0R LOOP
+rows=int(input("Enter the number of rows"))
+for i in range(rows,0,-1):
+    for j in range(0,i):
+        print(i,end="")
+
+    print()
+
+# Enter the number of rows5
+# 55555
+# 4444
+# 333
+# 22
+# 1
