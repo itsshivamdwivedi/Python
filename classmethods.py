@@ -12,8 +12,17 @@
 # print(Employee.company)
 
 class Mathematics:
-      def sum(self):
-         print(20+30)
+    def sum(self):
+        print(20 + 30)
 
-sumvalue=Mathematics()
-sumvalue.sum();
+    def multiplication(self):
+        rows = int(input("Enter the Number of Rows: "))
+        for i in range(1, rows + 1):
+            for j in range(1, i + 1):
+                print("*", end="")  # Print star on the same line
+            print()  # Print new line after each row
+
+sumvalue = Mathematics()
+sumvalue.sum()  # Call sum method to print 20 + 30
+sumvalue.multiplication()  # Call multiplication method
+
