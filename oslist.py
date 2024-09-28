@@ -5,7 +5,7 @@ print(folders)
 #     print(folders)
 
 
-# To display the files of all the folder we can use a loop 
+# To display the files of all the folder we can us a loop 
 for folder in folders:
     print(os.listdir(f"/data/{folder}"))
     
