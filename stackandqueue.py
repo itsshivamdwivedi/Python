@@ -32,7 +32,7 @@
 #         print("invalid input")
     #  Queue using list first in first out
 
-l=[]
+l=["xuhs",2,5,"abcde",34234,6666,9999]
 while True:
     c=input('''
 
